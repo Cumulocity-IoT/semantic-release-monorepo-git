@@ -1,0 +1,62 @@
+{
+  "name": "semantic-release-monorepo-git",
+  "version": "1.0.0",
+  "description": "Semantic release plugin to commit assets of a multi-lingual mono-repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoftwareAG/semantic-release-monorepo-git.git"
+  },
+  "keywords": [
+    "monorepo",
+    "git",
+    "semantic-release"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SoftwareAG/semantic-release-monorepo-git/issues"
+  },
+  "homepage": "https://github.com/SoftwareAG/semantic-release-monorepo-git#readme",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=18.8.2"
+  },
+  "jest": {
+    "transform": {},
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ]
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@semantic-release/git": ">=10.0.1",
+    "semantic-release": ">=22.0.12"
+  },
+  "dependencies": {
+    "@semantic-release/error": "^4.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "aggregate-error": "^5.0.0",
+    "execa": "^8.0.1",
+    "lodash-es": "^4.17.21",
+    "micromatch": "^4.0.5",
+    "p-reduce": "^3.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/github": "^9.2.6",
+    "file-url": "^4.0.0",
+    "jest": "^29.7.0",
+    "mkdirp": "^3.0.1",
+    "prettier": "^3.1.1",
+    "semantic-release": "^22.0.12",
+    "stream-buffers": "^3.0.2",
+    "tempy": "^3.1.0"
+  }
+}
