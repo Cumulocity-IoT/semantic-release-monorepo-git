@@ -4,7 +4,8 @@
   "description": "Semantic release plugin to commit assets of a multi-lingual mono-repository.",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "release": "semantic-release --debug"
   },
   "repository": {
     "type": "git",
