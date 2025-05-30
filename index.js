@@ -15,6 +15,8 @@ export const verifyConditions = (pluginConfig, context) => {
   const errors = verifyConfig(pluginConfig);
   if (errors.length > 0) throw new AggregateError(errors);
   verified = true;
+  const {logger} = context;
+  logger.log('verifyConditions monorepo-git plugin');
 };
 
 /**
@@ -27,5 +29,7 @@ export const verifyConditions = (pluginConfig, context) => {
 export const prepare = async (pluginConfig, context) => {
   const errors = verified ? [] : verifyConfig(pluginConfig);
   if (errors.length > 0) throw new AggregateError(errors);
+  const {logger} = context;
+  logger.log('prepare monorepo-git plugin');
   await prepareGit(pluginConfig, context);
 };
