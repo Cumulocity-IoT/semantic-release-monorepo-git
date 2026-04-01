@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@semantic-release/error": "^4.0.0",
-    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/git": ">=10.0.1",
     "aggregate-error": "^5.0.0",
     "execa": "^8.0.1",
     "lodash-es": "^4.17.21",
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/github": "^11.0.6",
+    "conventional-changelog-conventionalcommits": "^9.3.1",
     "file-url": "^4.0.0",
     "jest": "^29.7.0",
     "mkdirp": "^3.0.1",
